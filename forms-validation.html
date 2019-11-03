@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+  <title>Form Validation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet"/>
+  <link type="text/css" href="assets/css/theme.css" rel="stylesheet"/>
+  <link type="text/css" href="assets/css/main.css" rel="stylesheet"/>
+  <style>
+
+    .center-form {
+      padding: 30vh 0;
+      margin: 0 auto;
+      width: 230px;
+    }
+  </style>
+  <script>
+    // $(document).ready(function() {
+    //
+    //
+    //   $("#txtbox").keydown(function(event) {
+    //     // Разрешаем: backspace, delete, tab и escape
+    //     if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 ||
+    //         // Разрешаем: Ctrl+A
+    //         (event.keyCode == 65 && event.ctrlKey === true) ||
+    //         // Разрешаем: home, end, влево, вправо
+    //         (event.keyCode >= 35 && event.keyCode <= 39)) {
+    //       // Ничего не делаем
+    //       return;
+    //     }
+    //     else {
+    //       // Обеждаемся, что это цифра, и останавливаем событие keypress
+    //       if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+    //         event.preventDefault();
+    //       }
+    //     }
+    //   });
+    //
+    //
+    //
+    // });
+
+  </script>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="title text-dark">
+      Form Validation
+    </div>
+    <div class="lvivcss-logo">
+      <img src="./assets/images/lviv-css-logo.png" alt="" height="24"/>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="row-wrapper">
+      <div class="center-form">
+        <form>
+          <label for="name">Name (required): </label>
+          <input type="text" name="name" id="name" required aria-required="true">
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>
